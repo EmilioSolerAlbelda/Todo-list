@@ -12,51 +12,20 @@
 <body>
     <div class="layout">
         <main class="layout_main">
-            <h1 class="main_tittle">Las Tareas de Emilio</h1>
-            <form class="main_form">
-                <input type="text" class="form_input" placeholder="¿Qué tienes que hacer hoy?">
+            <h1 class="main_tittle">Todo List</h1>
+            <p class="main_instructions">Escribe tu tarea y presiona la tecla Enter para añadirla. Haz clic en el
+                círculo para marcarla como completada o en la papelera para eliminarla.</p>
 
-                <ul class="form_list">
-                    <li class="list_item">
-                        <div class="list_task">
-                            <input type="checkbox" class="task_check" />
-                            <p class="task_text">
-                                Tarea de prueba 1
-                            </p>
-                        </div>
-                        <i class="bi bi-trash list_delete"></i>
-                    </li>
-                    <li class="list_item">
-                        <div class="list_task">
-                            <input type="checkbox" class="task_check" />
-                            <p class="task_text">
-                                Tarea de prueba 2
-                            </p>
-                        </div>
-                        <i class="bi bi-trash list_delete"></i>
-                    </li>
-                    <li class="list_item">
-                        <div class="list_task">
-                            <input type="checkbox" class="task_check" />
-                            <p class="task_text">
-                                Tarea de prueba 3
-                            </p>
-                        </div>
-                        <i class="bi bi-trash list_delete"></i>
-                    </li>
-                    <li class="list_item">
-                        <div class="list_task">
-                            <input type="checkbox" class="task_check" />
-                            <p class="task_text">
-                                Tarea de prueba 4
-                            </p>
-                        </div>
-                        <i class="bi bi-trash list_delete"></i>
-                    </li>
-                </ul>
+            <form id="todo-form" class="main_form">
+                <input type="text" id="todo-input" class="form_input" placeholder="¿Qué tienes que hacer hoy?"
+                    autocomplete="off" required>
             </form>
+
+            <ul id="todo-list" class="form_list"></ul>
         </main>
     </div>
+
+    <script src="app.js"></script>
 </body>
 
 </html>
